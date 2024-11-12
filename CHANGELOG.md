@@ -2,6 +2,33 @@
 
 All notable changes to the project will be documented in this file.
 
+## [Reckless NNUE v6] - 2024-11-12
+
+### Changes
+
+-   Introduce a two-stage training process, using a larger WDL in the second stage
+-   Switch to a normal distribution for weight initialization
+-   Reduce the weight decay from `0.1` to `0.01`
+-   Architecture: `(768 -> 384)x2 -> 1`
+
+### Benchmark
+
+```
+Elo   | 5.14 +- 3.91 (95%)
+SPRT  | N=25000 Threads=1 Hash=32MB
+LLR   | 2.97 (-2.25, 2.89) [0.00, 5.00]
+Games | N: 14810 W: 4556 L: 4337 D: 5917
+Penta | [453, 1665, 2982, 1820, 485]
+```
+
+```
+Elo   | 8.10 +- 5.05 (95%)
+SPRT  | 8.0+0.08s Threads=1 Hash=32MB
+LLR   | 2.89 (-2.25, 2.89) [0.00, 5.00]
+Games | N: 6092 W: 1625 L: 1483 D: 2984
+Penta | [64, 685, 1417, 805, 75]
+```
+
 ## [Reckless NNUE v5] - 2024-10-16
 
 ### Changes
