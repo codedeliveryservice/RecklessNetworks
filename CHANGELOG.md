@@ -2,6 +2,30 @@
 
 All notable changes to the project will be documented in this file.
 
+## [Reckless NNUE v7] - 2025-03-14
+
+### Changes
+
+-   Architecture: `(768 -> 512)x2 -> 1`
+
+### Benchmark
+
+```
+Elo   | 27.14 +- 10.91 (95%)
+SPRT  | N=25000 Threads=1 Hash=32MB
+LLR   | 2.98 (-2.25, 2.89) [0.00, 5.00]
+Games | N: 2078 W: 749 L: 587 D: 742
+Penta | [53, 208, 410, 260, 108]
+```
+
+```
+Elo   | 24.11 +- 9.23 (95%)
+SPRT  | 8.0+0.08s Threads=1 Hash=32MB
+LLR   | 2.93 (-2.25, 2.89) [0.00, 5.00]
+Games | N: 1804 W: 518 L: 393 D: 893
+Penta | [7, 196, 387, 289, 23]
+```
+
 ## [Reckless NNUE v6] - 2024-11-12
 
 ### Changes
