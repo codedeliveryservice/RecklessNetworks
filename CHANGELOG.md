@@ -2,6 +2,62 @@
 
 All notable changes to the project will be documented in this file.
 
+## [Reckless NNUE v9] - 2025-03-17
+
+### Changes
+
+-   Introduce horizontal king mirroring
+
+### Benchmark
+
+```
+Elo   | 15.47 +- 6.80 (95%)
+SPRT  | N=25000 Threads=1 Hash=8MB
+LLR   | 4.03 (-2.25, 2.89) [0.00, 5.00]
+Games | N: 5012 W: 1666 L: 1443 D: 1903
+Penta | [118, 581, 976, 622, 209]
+```
+
+```
+Elo   | 11.18 +- 5.97 (95%)
+SPRT  | 8.0+0.08s Threads=1 Hash=16MB
+LLR   | 2.97 (-2.25, 2.89) [0.00, 5.00]
+Games | N: 4102 W: 1127 L: 995 D: 1980
+Penta | [24, 455, 991, 527, 54]
+```
+
+```
+Elo   | 10.47 +- 5.65 (95%)
+SPRT  | 40.0+0.40s Threads=1 Hash=64MB
+LLR   | 2.90 (-2.25, 2.89) [0.00, 5.00]
+Games | N: 4018 W: 1096 L: 975 D: 1947
+Penta | [6, 454, 987, 537, 25]
+```
+
+## [Reckless NNUE v8] - 2025-03-14
+
+### Changes
+
+-   Increase the final WDL value from `0.5` to `0.6`
+
+### Benchmark
+
+```
+Elo   | 4.78 +- 3.75 (95%)
+SPRT  | N=25000 Threads=1 Hash=8MB
+LLR   | 2.89 (-2.25, 2.89) [0.00, 5.00]
+Games | N: 15976 W: 4898 L: 4678 D: 6400
+Penta | [449, 1883, 3190, 1931, 535]
+```
+
+```
+Elo   | 5.26 +- 3.69 (95%)
+SPRT  | 8.0+0.08s Threads=1 Hash=32MB
+LLR   | 3.00 (-2.25, 2.89) [0.00, 5.00]
+Games | N: 10110 W: 2512 L: 2359 D: 5239
+Penta | [61, 1155, 2494, 1260, 85]
+```
+
 ## [Reckless NNUE v7] - 2025-03-14
 
 ### Changes
