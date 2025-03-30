@@ -2,6 +2,46 @@
 
 All notable changes to the project will be documented in this file.
 
+## [Reckless NNUE v10] - 2025-03-30
+
+### Changes
+
+-   Use `MSE` instead of `MPE(2.5)`
+
+### Benchmark
+
+```
+Elo   | -0.62 +- 2.79 (95%)
+SPRT  | 8.0+0.08s Threads=1 Hash=16MB
+LLR   | -2.25 (-2.25, 2.89) [0.00, 4.50]
+Games | N: 17824 W: 4359 L: 4391 D: 9074
+Penta | [164, 2101, 4336, 2225, 86]
+```
+
+```
+Elo   | 7.12 +- 4.20 (95%)
+SPRT  | 40.0+0.40s Threads=1 Hash=64MB
+LLR   | 2.89 (-2.25, 2.89) [0.00, 4.50]
+Games | N: 6394 W: 1609 L: 1478 D: 3307
+Penta | [17, 655, 1712, 806, 7]
+```
+
+## [Reckless NNUE v10] - 2025-03-29
+
+### Changes
+
+-   Use constant WDL scheduler in the second stage (`WDL=0.6`)
+
+### Benchmark
+
+```
+Elo   | 4.11 +- 3.04 (95%)
+SPRT  | 8.0+0.08s Threads=1 Hash=16MB
+LLR   | 2.91 (-2.25, 2.89) [0.00, 4.50]
+Games | N: 14466 W: 3536 L: 3365 D: 7565
+Penta | [71, 1709, 3512, 1860, 81]
+```
+
 ## [Reckless NNUE v9] - 2025-03-17
 
 ### Changes
